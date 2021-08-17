@@ -21,3 +21,4 @@ console.log("--\n")
 const resul2 = alunos.map(a => a.nota).reduce(function(acumulador, valueAtual){
     return acumulador + valueAtual;
 }, 10);
+console.log(resul2)
