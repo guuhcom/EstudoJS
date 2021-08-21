@@ -19,8 +19,7 @@ console.log(carrinho);
 
 const toObject = json => JSON.parse(json);
 const valueMoney = obj => obj.preco;
-const toMoney = e => 
-    `R$ ${parseFloat(e).toFixed(2).replace(".",",")}`;
+const toMoney = e => `R$ ${parseFloat(e).toFixed(2).replace(".",",")}`;
 
 let values = carrinho.map2(toObject).map2(valueMoney).map2(toMoney);
 
